@@ -1,0 +1,29 @@
+@PaginationDemo.API_HostAddress = https://localhost:7220
+
+# Products - Get with Offset Pagination;
+
+GET {{PaginationDemo.API_HostAddress}}/api/products/GetWithOffsetPagination?pageNumber=1&pageSize=5
+
+###
+
+GET {{PaginationDemo.API_HostAddress}}/api/products/GetWithOffsetPagination/?pageNumber=20000&pageSize=5
+
+###
+
+# Products - Get with Keyset Pagination;
+
+GET {{PaginationDemo.API_HostAddress}}/api/products/GetWithKeysetPagination?reference=0&pageSize=5
+
+###
+
+GET {{PaginationDemo.API_HostAddress}}/api/products/GetWithKeysetPagination?reference=99995&pageSize=5
+
+###
+
+# Orders - Get with Generic Pagination;
+
+GET {{PaginationDemo.API_HostAddress}}/api/orders/GetWithGenericOffsetPagination?pageNumber=1&pageSize=5
+
+###
+
+GET {{PaginationDemo.API_HostAddress}}/api/orders/GetWithGenericOffsetPagination?pageNumber=2&pageSize=5
